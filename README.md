@@ -1,7 +1,10 @@
 # LP-I-20201
 Exercícios de LP-I-Prof.Adriana
+
 Exercícios para entrega - E3: Modificadores de acesso e atributos de classe
+
 1)
+
 a) Crie em git um repositório para conter seus exercícios e tarefas de LP1 e disponibilize o link aqui.
 
 b) Em seguida, para cada imagem ou vídeo apresentados a seguir, elaborar uma classe Java contendo:
