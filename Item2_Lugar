@@ -1,0 +1,43 @@
+public class Item2_Lugar {
+		   //int age;
+		   String continent;
+		   String country;
+		   String city;
+		   String primeMinister;
+		   
+		   private String gps = "00°00'00s"; // TOP SECRET!
+			
+		   public String getGPS() {
+			   return this.gps;
+		   }     
+		   //Default constructor
+		   Item2_Lugar(){
+			this.continent="Oceania";
+			this.country="New Zealand";
+			this.city="Wellington";
+			this.primeMinister="Jacinda Ardern";
+		   }
+			
+		   //Parameterized constructor
+		   Item2_Lugar(String a,String b,String c,String d){
+			this.continent=a;
+			this.country=b;
+			this.city=c;
+			this.primeMinister=d;
+		   }
+
+		   public static void main(String args[]){
+					
+			Item2_Lugar Local01 = new Item2_Lugar();
+			Item2_Lugar Local02 = new Item2_Lugar("Asia", "India", "New Delhi", "Narendra Modi");
+			
+			System.out.println(String.format ("Continent: %s, Country: %s, City: %s, Prime Minister: %s ", Local01.continent, Local01.country, Local01.city, Local01.primeMinister));
+			System.out.println(String.format ("Continent: %s, Country: %s, City: %s, Prime Minister: %s ", Local02.continent, Local02.country, Local02.city, Local02.primeMinister));
+			System.out.println(String.format ("Exact Position of Prime Minister: %s ", Local01.primeMinister, "?"));
+			//String SecretLocal = Local01.primeMinister; 
+			System.out.println("Password...");
+			System.out.println("It´s a Match.");
+			System.out.println("Global Satelite Position: " + Local01.getGPS());
+			
+		   }
+		}
